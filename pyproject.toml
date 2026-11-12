@@ -9,4 +9,4 @@ description = "Shared utilities for molecular tools"
 requires-python = ">=3.10"
 
 [tool.setuptools.packages.find]
-include = ["molecule_utilities*"]
+include = ["molecular_utilities*"]

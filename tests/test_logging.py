@@ -4,10 +4,16 @@ import tempfile
 import unittest
 from pathlib import Path
 
-from molecule_utilities.logging import configure_logging, get_logger
+from molecular_utilities.logging import configure_logging, get_logger
 
 
 class LoggingTests(unittest.TestCase):
+    def test_public_package_import(self):
+        from molecular_utilities import logging as logging_module
+
+        self.assertIs(logging_module.configure_logging, configure_logging)
+        self.assertIs(logging_module.get_logger, get_logger)
+
     def setUp(self):
         self.saved = {}
         for name in ("quick_qm", "test_logging_alpha", "test_logging_beta", "test_logging_parent",

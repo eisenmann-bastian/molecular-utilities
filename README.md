@@ -1,7 +1,7 @@
 # Molecular utilities
 
 Shared Python utilities for molecular tools. Currently provides
-`molecule_utilities.logging.configure_logging` and `get_logger`.
+`molecular_utilities.logging.configure_logging` and `get_logger`.
 
 ## Logging
 
@@ -10,7 +10,7 @@ loggers using the same namespace:
 
 ```python
 import logging
-from molecule_utilities.logging import configure_logging, get_logger
+from molecular_utilities.logging import configure_logging, get_logger
 
 configure_logging(
     namespace="my_project",
