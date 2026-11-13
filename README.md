@@ -3,6 +3,12 @@
 Shared Python utilities for molecular tools. Currently provides
 `molecular_utilities.logging.configure_logging` and `get_logger`.
 
+## Contents
+
+- [Logging](#logging) · [Development](#development) ·
+  [Contributing](#contributing) · [Contact and support](#contact-and-support) ·
+  [License](#license)
+
 ## Logging
 
 Configure logging once at the application entry point, then obtain child
@@ -47,3 +53,23 @@ propagation is intentional.
 
 For local development, install with `python -m pip install -e .`.
 Run tests with `python -m unittest discover -s tests`.
+
+`./examples/setup-venv.sh` creates a new `.venv` and installs this checkout;
+it accepts an optional new path and never overwrites an existing environment.
+`./examples/run-example.sh` creates `.venv` if necessary and runs the logging
+example. `./examples/run-tests.sh` uses the active Python or `PYTHON`.
+
+## Contributing
+
+Open an issue or submit a pull request. Include tests and update documentation
+when behavior changes.
+
+## Contact and support
+
+- GitHub: [@eisenmann-bastian](https://github.com/eisenmann-bastian)
+- LinkedIn: [Bastian Eisenmann](https://www.linkedin.com/in/bastianeisenmann/)
+- [Buy me a coffee](https://buymeacoffee.com/bastian.eisenmann)
+
+## License
+
+[BSD 3-Clause License](LICENSE).

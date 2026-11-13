@@ -6,6 +6,8 @@ build-backend = "setuptools.build_meta"
 name = "molecular-utilities"
 version = "0.1.0"
 description = "Shared utilities for molecular tools"
+readme = "README.md"
+license = {file = "LICENSE"}
 requires-python = ">=3.10"
 
 [tool.setuptools.packages.find]
